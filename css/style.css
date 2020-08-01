@@ -1,5 +1,6 @@
 :root {
   --primary-color: #e50914;
+  --dark-color:#141414;
 }
 
 * {
@@ -119,6 +120,80 @@ img {
   text-transform: uppercase;
   color: #fff;
   font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/*tabs*/
+.tabs {
+  background: var(--dark-color);
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.tabs .container > .tab-item {
+  padding: 1.5rem 0;
+}
+
+.tabs .container > .tab-item:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.tab-border {
+  border-bottom: 5px solid var(--primary-color);
+}
+
+.tab-content {
+  padding: 3rem 0;
+  background: #000;
+  color: #fff;
+}
+
+#tab-1-content .tab-1-content-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*continer*/
+.container {
+  max-width: 70%;
+  margin: 0  auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.tabs p {
+  font-size: 1.2rem;
+  padding-top: .5rem;
+}
+
+/*text style*/
+.text-lg {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
