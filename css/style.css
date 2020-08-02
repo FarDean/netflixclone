@@ -179,6 +179,95 @@ img {
           justify-content: center;
 }
 
+#tab-2-content .tab-2-content-top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tab-2-content .tab-2-content-bottom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+/*Table*/
+.table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table thead th {
+  text-transform: uppercase;
+  padding: .8rem;
+}
+
+.table tbody tr td {
+  color: #999;
+  padding: .8rem 1.2rem;
+  text-align: center;
+  max-height: 40px;
+}
+
+.table tbody tr td:first-child {
+  text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #3d3d3d;
+}
+
+/*footer*/
+.footer {
+  max-width: 75%;
+  margin: 1rem auto;
+  overflow: auto;
+}
+
+.footer, .footer a {
+  color: #999;
+  font-size: .9rem;
+}
+
+.footer p {
+  margin-bottom: 1.8rem;
+}
+
+.footer .footer-cols {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.footer li {
+  line-height: 1.9;
+}
+
 /*continer*/
 .container {
   max-width: 70%;
@@ -229,5 +318,50 @@ img {
   font-size: 1rem;
   padding: .8rem 1.3rem;
   text-transform: uppercase;
+}
+
+/*typography*/
+.text-dark {
+  color: #999;
+}
+
+.text-md {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 960px) {
+  .showcase {
+    height: 70vh;
+  }
+  .hide-sm {
+    display: none;
+  }
+  .showcase-content h1 {
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: .8;
+    margin-bottom: 1.5rem;
+  }
+  .showcase-content p {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+  .btn-xl {
+    font-size: 1rem;
+    padding: .8rem 1.1rem;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 700px) {
+  #tab-1-content .tab-1-content-inner {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
