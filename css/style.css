@@ -243,7 +243,7 @@ img {
 /*footer*/
 .footer {
   max-width: 75%;
-  margin: 1rem auto;
+  margin: 1rem auto 0 auto;
   overflow: auto;
 }
 
@@ -262,6 +262,12 @@ img {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
+}
+
+.footer-bg {
+  width: 100%;
+  background-color: #141414;
+  z-index: -1;
 }
 
 .footer li {
@@ -363,5 +369,20 @@ img {
     grid-gap: 1rem;
     text-align: center;
   }
+  .footer .footer-cols {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+.tab-content-item {
+  display: none;
+}
+
+.active.tab-content-item {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
