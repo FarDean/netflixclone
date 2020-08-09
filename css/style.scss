@@ -26,6 +26,11 @@ h5 {
     font-size: 3.5rem;
     color: #e50914;
 }
+h6 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
 a {
     color: #fff;
     text-decoration: none;
@@ -278,6 +283,60 @@ img {
     font-size: 1.5rem;
 }
 
+// Accordion
+.acc-div {
+    border-top: 4px solid #3d3d3d;
+    padding: 45px 0;
+    margin:0 auto;
+}
+.acc-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+    background-color: #3d3d3d;
+    cursor: pointer;
+}
+
+.acc-head p {
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;
+}
+.accordion {
+    margin:30px auto;
+    width: 75%;
+    height: auto;
+}
+.acc-head-content{
+    background-color: #3d3d3d;
+    padding:10px 25px;
+    text-align: left;
+    color: white;
+    margin-top: 1px;
+    font-size: 1.5rem;
+    display: none;
+}
+.acc-head-content a{
+    text-decoration: underline;
+}
+.acc-head-content p{
+
+    padding: 17px 0;
+}
+#plus {
+    font-size: 3.2rem;
+    font-weight: 100;
+}
+.acc-head-wrapper {
+    margin: 8px auto;
+}
+@media(max-width:1500px) {
+    .accordion {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+}
 @media(max-width:960px) {
     .showcase {
         height: 70vh;
@@ -303,6 +362,20 @@ img {
         padding: .8rem 1.1rem;
         text-transform: uppercase;
     }
+    .accordion {
+        margin:30px auto;
+        width: 100%;
+        height: auto;
+        font-size: 1rem;
+    }
+    .acc-head p {
+        font-size: 1.5rem;
+        color: white;
+        text-transform: capitalize;
+    }
+    #plus{
+        font-size: 2.3rem;
+    }
 }
 @media(max-width:700px){
     #tab-1-content .tab-1-content-inner {
@@ -317,9 +390,13 @@ img {
         grid-gap: 1rem;
     }
 }
+
 .tab-content-item{
     display: none;
 }
 .active.tab-content-item {
+    display: block;
+}
+.acc-head-content.active {
     display: block;
 }
